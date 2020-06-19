@@ -6,10 +6,13 @@ main {
   background-color: white;
 }
 
+header {
+  background-color: white;
+}
+
 nav ul li {
   color: green;
   font-family: fantasy;
-  background-color: white;
 }
 
 #curtain h1 {
@@ -35,4 +38,10 @@ nav ul li {
   background-color: white;
   color: black;
   padding: 6px 16px;
+}
+
+#door p {
+  color: black;
+  font-family: cursive;
+  background-color: white;
 }
