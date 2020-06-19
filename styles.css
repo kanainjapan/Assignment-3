@@ -6,28 +6,32 @@ main {
   background-color: white;
 }
 
-nav p {
-  font-family: fantasy;
-}
-
-#hero-content h1 {
+nav ul li {
   color: green;
   font-family: fantasy;
+  background-color: white;
 }
 
-#hero-content p {
+#curtain h1 {
+  color: white;
+  font-family: fantasy;
+  font-size: 18px;
+  background-color: green;
+}
+
+#display p {
   color: black;
   font-family: cursive;
   font-size: 12px;
 }
 
-#hero-content .first-cta {
+#display .first-cta {
   background-color: white;
   color: black;
   border: 6px solid black;
 }
 
-#hero-content .second-cta {
+#display .second-cta {
   background-color: white;
   color: black;
   padding: 6px 16px;
