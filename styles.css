@@ -1,9 +1,48 @@
 body {
   background-color: white;
 }
-.header {
+
+#header {
   background-color: white;
   border: 5px solid darkgreen;
   font-family: fantasy;
   color: darkgreen;
+}
+
+#header h2 {
+  color:black;
+  font-family: cursive;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+main {
+  background-color: white;
+  color: firebrick;
+  font-family: fantasy;
+  font-size: 9px;
+  font-size: 0.6rem;
+}
+
+#display {
+  border: 5px solid black;
+}
+
+#sidebar h1 {
+  font-family: cursive;
+  color: firebrick;
+}
+
+#sidebar h2 {
+  font-family: cursive;
+  color: firebrick;
+}
+
+#sidebar input {
+  padding: 6px;
+  border: 2px solid darkgreen;
+  border-radius: 15px;
+  font-family: fantasy;
 }
