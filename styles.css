@@ -14,11 +14,20 @@ body {
   font-family: cursive;
 }
 
+#header .left {
+  display: inline-block;
+}
+
+#header .right {
+  float: right;
+}
+
 nav ul li {
   display: inline-block;
 }
 
 main {
+  float: left;
   background-color: white;
   color: firebrick;
   font-family: fantasy;
@@ -28,6 +37,21 @@ main {
 
 #display {
   border: 5px solid black;
+}
+
+#display h1 {
+  background-color: white;
+  color: firebrick;
+  border: 2px solid black;
+  display: inline;
+  padding: 5px;
+}
+
+#sidebar {
+  float: right;
+  width: 200px;
+  height: 100px;
+  text-align: center;
 }
 
 #sidebar h1 {
