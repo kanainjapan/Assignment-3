@@ -76,9 +76,7 @@ main {
 }
 
 .row_top {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+  background-image: url("https://kojita.net/wp-content/uploads/2017/12/1-P3233327a.jpg"), url("https://shizuokahappy.com/wp-content/uploads/2018/02/hapimama16monte.jpg");
   border: 5px solid black;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
