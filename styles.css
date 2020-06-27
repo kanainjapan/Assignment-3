@@ -5,66 +5,112 @@ body {
 #header {
   background-color: white;
   border: 5px solid darkgreen;
-  font-family: fantasy;
-  color: darkgreen;
 }
 
-#header h2 {
+#header .logo {
+  width: 104px;
+  height: 66px;
+  padding: 21px 25px 0 0;
+  font-family: cursive;
+  color: darkgreen;
+  float: left;
+}
+
+#header #banner {
+  width: 821px;
+  height: 42px;
+  padding: 0 0 20px 0;
+}
+
+#header #banner h1 {
   color:black;
   font-family: cursive;
 }
 
-#header .left {
-  display: inline-block;
+#header #navi .bottom_navi ul li {
+  width: 821px;
+  text-decoration: none;
 }
 
-#header .right {
-  float: right;
+#header #navi .bottom_navi ul li a {
+  width: 821px;
+  height: 25px;
+  font-family: fantasy;
+  color: darkgreen;
+  text-decoration: none;
 }
 
-nav ul li {
-  display: inline-block;
+#header #navi .bottom_navi #menu {
+  float: left;
+  width: 151px;
+  padding: 0 0 0 12px;
+}
+
+#header #navi .bottom_navi #what {
+  float:left;
+  width: 151px;
+  padding: 0 0 0 12px;
+}
+
+#header #navi .bottom_navi #FAQ {
+  float:left;
+  width: 151px;
+  padding: 0 0 0 12px;
+}
+
+#header #navi .bottom_navi #join {
+  float: left;
+  width: 151px;
+  padding: 0 0 0 12px;
 }
 
 main {
-  float: left;
   background-color: white;
+}
+
+#area_left {
   color: firebrick;
   font-family: fantasy;
   font-size: 9px;
   font-size: 0.6rem;
 }
 
-#display {
+.row_top {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   border: 5px solid black;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  float: left;
 }
 
-#display h1 {
+#area_left h1 {
   background-color: white;
-  color: firebrick;
   border: 2px solid black;
   display: inline;
   padding: 5px;
 }
 
-#sidebar {
+#area_right {
   float: right;
   width: 200px;
   height: 100px;
   text-align: center;
+  margin: 0;
 }
 
-#sidebar h1 {
+#area_right h1 {
   font-family: cursive;
   color: firebrick;
 }
 
-#sidebar h2 {
+#area_right h2 {
   font-family: cursive;
   color: firebrick;
 }
 
-#sidebar input {
+#area_right input {
   padding: 6px;
   border: 2px solid darkgreen;
   border-radius: 15px;
