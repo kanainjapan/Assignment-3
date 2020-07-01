@@ -13,23 +13,25 @@ body {
 #header .logo {
   width: 104px;
   height: 66px;
-  padding: 21px 25px 0 0;
+  padding: 21px 25px 25px 10px;
   font-family: cursive;
   color: darkgreen;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .circle {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
 }
 
 #header img {
-  right: -10px;??????
+  position: relative;
+  left: -5px;
 }
 
 #navi {
@@ -51,6 +53,7 @@ body {
   width: 821px;
   text-decoration: none;
   list-style: none;
+  text-align: center;
 }
 
 #navi .bottom_navi ul li a {
@@ -65,24 +68,32 @@ body {
   float: left;
   width: 151px;
   padding: 0 0 0 12px;
+  border-right: dotted darkgreen 2px;
+  border-left: dotted darkgreen 2px;
 }
 
 #navi .bottom_navi #what {
   float:left;
   width: 151px;
   padding: 0 0 0 12px;
+  border-right: dotted darkgreen 2px;
+  border-left: dotted darkgreen 2px;
 }
 
 #navi .bottom_navi #FAQ {
   float:left;
   width: 151px;
   padding: 0 0 0 12px;
+  border-right: dotted darkgreen 2px;
+  border-left: dotted darkgreen 2px;
 }
 
 #navi .bottom_navi #join {
   float: left;
   width: 151px;
   padding: 0 0 0 12px;
+  border-right: dotted darkgreen 2px;
+  border-left: dotted darkgreen 2px;
 }
 
 main {
