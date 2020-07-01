@@ -1,10 +1,13 @@
 body {
   background-color: white;
+  box-sizing: border-box;
 }
 
 #header {
   background-color: white;
   border: 5px solid darkgreen;
+  display: flex;
+  flex-direction: row;
 }
 
 #header .logo {
@@ -13,26 +16,44 @@ body {
   padding: 21px 25px 0 0;
   font-family: cursive;
   color: darkgreen;
-  float: left;
+  display: flex;
+  flex-direction: row;
 }
 
-#header #banner {
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+#header img {
+  right: -10px;??????
+}
+
+#navi {
+  display: flex;
+  flex-direction: column;
+}
+
+#navi #banner {
   width: 821px;
   height: 42px;
   padding: 0 0 20px 0;
-}
-
-#header #banner h1 {
-  color:black;
+  color: black;
   font-family: cursive;
+  text-align: center;
 }
 
-#header #navi .bottom_navi ul li {
+#navi .bottom_navi ul li {
+  display: inline-block;
   width: 821px;
   text-decoration: none;
+  list-style: none;
 }
 
-#header #navi .bottom_navi ul li a {
+#navi .bottom_navi ul li a {
   width: 821px;
   height: 25px;
   font-family: fantasy;
@@ -40,25 +61,25 @@ body {
   text-decoration: none;
 }
 
-#header #navi .bottom_navi #menu {
+#navi .bottom_navi #menu {
   float: left;
   width: 151px;
   padding: 0 0 0 12px;
 }
 
-#header #navi .bottom_navi #what {
+#navi .bottom_navi #what {
   float:left;
   width: 151px;
   padding: 0 0 0 12px;
 }
 
-#header #navi .bottom_navi #FAQ {
+#navi .bottom_navi #FAQ {
   float:left;
   width: 151px;
   padding: 0 0 0 12px;
 }
 
-#header #navi .bottom_navi #join {
+#navi .bottom_navi #join {
   float: left;
   width: 151px;
   padding: 0 0 0 12px;
@@ -68,22 +89,120 @@ main {
   background-color: white;
 }
 
-#area_left {
+#area_main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.area_left {
   color: firebrick;
   font-family: fantasy;
   font-size: 9px;
   font-size: 0.6rem;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 50%;
+
+  display: flex;
+  flex-direction: column;
+
 }
 
-.row_top {
-  background-image: url("https://kojita.net/wp-content/uploads/2017/12/1-P3233327a.jpg"), url("https://shizuokahappy.com/wp-content/uploads/2018/02/hapimama16monte.jpg");
-  border: 5px solid black;
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
+.display_top_left {
+  border-top: 8px solid black;
+  border-bottom: 4px solid black;
+  border-left: 8px solid black;
+  border-top-left-radius: 45px;
+  float: left;
+  height: 100px;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.display_top_right {
+  border-top: 8px solid black;
+  border-bottom: 4px solid black;
+  border-right: 8px solid black;
+  border-top-right-radius: 45px;
+  float: left;
+  height: 100px;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.display_middle_left {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-left: 8px solid black;
+  height: 100px;
+  float: left;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.display_middle_right {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-right: 8px solid black;
+  height: 100px;
+  float: left;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.display_bottom_left {
+  border-top: 4px solid black;
+  border-left: 8px solid black;
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
+  height: 100px;
+  float: left;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.display_bottom_right {
+  border-top: 4px solid black;
+  border-right: 8px solid black;
+  border-bottom: 4px solid black;
+  border-left: 4px solid black;
+  height: 100px;
+  float: left;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.display_stand_left {
+  border-top: 4px solid black;
+  border-right: 2px solid black;
+  border-bottom: 8px solid black;
+  border-left: 8px solid black;
+  height: 100px;
+  width: 20%;
+  object-fit: cover;
+  box-sizing: border-box;
   float: left;
 }
 
-#area_left h1 {
+.display_stand_right {
+  background-color: lightpink;
+  border-top: 4px solid black;
+  border-right: 8px solid black;
+  border-bottom: 8px solid black;
+  border-left: 2px solid black;
+  height: 100px;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.display_stand_right h1 {
+  color: black;
+  text-align: center;
+}
+
+Bakeries {
   background-color: white;
   border: 2px solid black;
   display: inline;
@@ -92,21 +211,22 @@ main {
 
 
 #area_right {
-  float: right;
-  width: 200px;
-  height: 100px;
+  height: 300px;
   text-align: center;
-  margin: 0;
+  box-sizing: border-box;
+  border: solid black 5px;
 }
 
-#area_right h1 {
+.side_navi_top {
   font-family: cursive;
   color: firebrick;
+  font-size: 25px;
 }
 
-#area_right h2 {
+.side_navi_bottom {
   font-family: cursive;
-  color: firebrick;
+  color: black;
+  font-size: 20px;
 }
 
 #area_right input {
@@ -114,4 +234,5 @@ main {
   border: 2px solid darkgreen;
   border-radius: 15px;
   font-family: fantasy;
+  text-align: center;
 }
