@@ -112,13 +112,15 @@ main {
   font-size: 9px;
   font-size: 0.6rem;
 
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 50%;
-
   display: flex;
   flex-direction: column;
+}
 
+.top_row h1 {
+  background-color: white;
+  border: 2px solid black;
+  display: inline;
+  padding: 5px;
 }
 
 .display_top_left {
@@ -127,7 +129,7 @@ main {
   border-left: 8px solid black;
   border-top-left-radius: 45px;
   float: left;
-  height: 100px;
+  height: 120px;
   box-sizing: border-box;
   object-fit: cover;
 }
@@ -138,7 +140,7 @@ main {
   border-right: 8px solid black;
   border-top-right-radius: 45px;
   float: left;
-  height: 100px;
+  height: 120px;
   box-sizing: border-box;
   object-fit: cover;
 }
@@ -147,7 +149,7 @@ main {
   border-top: 4px solid black;
   border-bottom: 4px solid black;
   border-left: 8px solid black;
-  height: 100px;
+  height: 120px;
   float: left;
   box-sizing: border-box;
   object-fit: cover;
@@ -157,7 +159,7 @@ main {
   border-top: 4px solid black;
   border-bottom: 4px solid black;
   border-right: 8px solid black;
-  height: 100px;
+  height: 120px;
   float: left;
   box-sizing: border-box;
   object-fit: cover;
@@ -168,7 +170,7 @@ main {
   border-left: 8px solid black;
   border-bottom: 4px solid black;
   border-right: 4px solid black;
-  height: 100px;
+  height: 120px;
   float: left;
   box-sizing: border-box;
   object-fit: cover;
@@ -179,7 +181,7 @@ main {
   border-right: 8px solid black;
   border-bottom: 4px solid black;
   border-left: 4px solid black;
-  height: 100px;
+  height: 120px;
   float: left;
   box-sizing: border-box;
   object-fit: cover;
@@ -190,7 +192,7 @@ main {
   border-right: 2px solid black;
   border-bottom: 8px solid black;
   border-left: 8px solid black;
-  height: 100px;
+  height: 120px;
   width: 20%;
   object-fit: cover;
   box-sizing: border-box;
@@ -203,7 +205,7 @@ main {
   border-right: 8px solid black;
   border-bottom: 8px solid black;
   border-left: 2px solid black;
-  height: 100px;
+  height: 120px;
   width: 80%;
   box-sizing: border-box;
 }
@@ -212,14 +214,6 @@ main {
   color: black;
   text-align: center;
 }
-
-Bakeries {
-  background-color: white;
-  border: 2px solid black;
-  display: inline;
-  padding: 5px;
-}
-
 
 #area_right {
   height: 300px;
