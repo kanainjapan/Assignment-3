@@ -114,6 +114,7 @@ main {
 
   display: flex;
   flex-direction: column;
+  margin-left: 5%;
 }
 
 .top_row h1 {
@@ -200,7 +201,7 @@ main {
 }
 
 .display_stand_right {
-  background-color: lightpink;
+  background-color: #ffccd5;
   border-top: 4px solid black;
   border-right: 8px solid black;
   border-bottom: 8px solid black;
@@ -220,6 +221,7 @@ main {
   text-align: center;
   box-sizing: border-box;
   border: solid black 5px;
+  margin-right: 2%;
 }
 
 .side_navi_top {
