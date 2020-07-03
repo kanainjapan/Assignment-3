@@ -109,8 +109,6 @@ main {
 .area_left {
   color: firebrick;
   font-family: fantasy;
-  font-size: 9px;
-  font-size: 0.6rem;
 
   display: flex;
   flex-direction: column;
@@ -118,6 +116,8 @@ main {
 }
 
 .top_row h1 {
+  font-size: 9px;
+  font-size: 1rem;
   background-color: white;
   border: 2px solid black;
   display: inline;
@@ -214,6 +214,9 @@ main {
 .display_stand_right h1 {
   color: black;
   text-align: center;
+  font-size: 100%;
+  text-decoration: none;
+  padding: 10px;
 }
 
 #area_right {
